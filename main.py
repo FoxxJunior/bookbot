@@ -10,6 +10,7 @@ def main():
 # Path is read out and content returned as string
 def get_book_text(title):
     with open(title) as book:
-        return book.read()
+        string = book.read()
+    return string
 
 main()
