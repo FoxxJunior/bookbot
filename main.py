@@ -1,10 +1,11 @@
 # Set variables
 path = "books/frankenstein.txt"
-from stats import count
+from stats import count, get_book_text, characters
 
-# Split the text in separate strings and return count
+# List each character including symbols and spaces and count
 def main():
-    num = count(path)
-    print(num)
+    text = get_book_text(path)
+    result = characters(text)
+    print(result)
 
 main()
